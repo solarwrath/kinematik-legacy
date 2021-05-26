@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinematik.Application", "Kinematik.Application\Kinematik.Application.csproj", "{D2F2BBE0-8110-49DD-B858-447B64BC626D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinematik.Core", "Kinematik.Core\Kinematik.Core.csproj", "{D26D9BFE-59C9-4E30-B5D7-A12463E0D16E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinematik.Database", "Kinematik.Database\Kinematik.Database.csproj", "{023B691C-93BF-4162-86CE-D7A8D01DAE3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{D2F2BBE0-8110-49DD-B858-447B64BC626D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2F2BBE0-8110-49DD-B858-447B64BC626D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2F2BBE0-8110-49DD-B858-447B64BC626D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D26D9BFE-59C9-4E30-B5D7-A12463E0D16E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D26D9BFE-59C9-4E30-B5D7-A12463E0D16E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D26D9BFE-59C9-4E30-B5D7-A12463E0D16E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D26D9BFE-59C9-4E30-B5D7-A12463E0D16E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023B691C-93BF-4162-86CE-D7A8D01DAE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023B691C-93BF-4162-86CE-D7A8D01DAE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023B691C-93BF-4162-86CE-D7A8D01DAE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023B691C-93BF-4162-86CE-D7A8D01DAE3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
