@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Westwind.AspNetCore.LiveReload;
 
 namespace Kinematik.Application
 {
@@ -29,8 +30,10 @@ namespace Kinematik.Application
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
             );
             services.AddDatabaseDeveloperPageExceptionFilter();
+
+            services.AddLiveReload();
             
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +51,9 @@ namespace Kinematik.Application
             }
 
             app.UseHttpsRedirection();
+            
+            app.UseLiveReload();
+            
             app.UseStaticFiles();
 
             app.UseRouting();

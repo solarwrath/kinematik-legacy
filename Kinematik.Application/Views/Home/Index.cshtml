@@ -3,8 +3,10 @@
 }
 
 <div id="myApp">
-    {{ test }}
-    <b-button>asdass</b-button>
+    <template v-if="currentMovie">
+        {{ currentMovie.title }}
+    </template>
+    <b-button>123213</b-button>
 </div>
 
 @section Scripts {

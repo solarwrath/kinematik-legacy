@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+@model Kinematik.Application.MVC.Admin.Models.DashboardViewModel;
+
+@foreach (var a in Model.Areas)
+{
+    <h1>@a.Link - @a.Title</h1>
+}
+
+@section Scripts {
+}
